@@ -6,13 +6,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="ClientApp\src\app\app.route.ts" />
-    <None Remove="ClientApp\src\app\model\userloginmodel.ts" />
+    <Compile Remove="%2a%2a\**" />
+    <Content Remove="%2a%2a\**" />
+    <EmbeddedResource Remove="%2a%2a\**" />
+    <None Remove="%2a%2a\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ClientApp\src\app\shared\" />
-    <Folder Include="wwwroot\" />
+    <None Remove="ClientApp\src\app\app.route.ts" />
+    <None Remove="ClientApp\src\app\model\userloginmodel.ts" />
   </ItemGroup>
 
   <ItemGroup>
