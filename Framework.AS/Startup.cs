@@ -1,6 +1,8 @@
 ﻿using System.Text;
 using Framework.Data;
+using Framework.Factory;
 using Framework.Factory.Client;
+using Framework.Factory.Common;
 using Framework.Factory.Factory;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -39,7 +41,8 @@ namespace Framework.AS
             services.AddScoped<CommandFactory, ConcreteCommandFactory>();
             services.AddScoped<ICommandHandler, CommandHandler>();
             services.AddScoped<QueryFactory, ConcreteQueryFactory>();
-            services.AddScoped<IQueryExecutor, QueryExecutor>(); 
+            services.AddScoped<IQueryExecutor, QueryExecutor>();
+            services.AddScoped<ILoggedInUser, LoggedInUser>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

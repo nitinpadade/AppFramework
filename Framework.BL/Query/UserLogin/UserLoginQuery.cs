@@ -10,21 +10,26 @@ namespace Framework.BL.Query.UserLogin
     public class UserLoginQuery : IQuery<QueryResult<UserLoginModel>, UserLoginParameter>
     {
         private readonly FrameworkDataContext _dbcontext;
-        public UserLoginQuery(FrameworkDataContext dbcontext)
+        private readonly ILoggedInUser _loggedInUser;
+
+        public UserLoginQuery(FrameworkDataContext dbcontext, ILoggedInUser loggedInUser)
         {
             _dbcontext = dbcontext;
+            _loggedInUser = loggedInUser;
         }
 
         public QueryResult<UserLoginModel> Execute(UserLoginParameter parameters)
         {
             try
             {
+               
                 var result = _dbcontext.User.Where(n => n.UserName == parameters.UserName && n.Password == parameters.Password)
                     .Select(n => new UserLoginModel
                     {
                         Id = n.Id,
-                        Name = n.FirstName + " " + n.MiddleName,
+                        Name = n.FirstName + " " + n.LastName,
                         RoleId = n.RoleId.GetValueOrDefault(),
+                        Role = _dbcontext.Role.Where(r => r.Id == n.RoleId.GetValueOrDefault()).FirstOrDefault().Name,
                         IsAuthenticated = true
                     }).FirstOrDefault();
 
@@ -41,7 +46,7 @@ namespace Framework.BL.Query.UserLogin
 
                 return new QueryResult<UserLoginModel>()
                 {
-                    Data = new UserLoginModel {  IsAuthenticated = false},
+                    Data = new UserLoginModel { IsAuthenticated = false },
                     IsExecuted = true,
                     Status = CommandQueryStatus.Failed,
                     ErrorMessage = ex.ToString(),

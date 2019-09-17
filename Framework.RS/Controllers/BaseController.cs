@@ -1,5 +1,6 @@
 ﻿using Framework.Factory.Client;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace Framework.RS.Controllers
 {
@@ -27,5 +28,14 @@ namespace Framework.RS.Controllers
         {
             return _query.Execute<TCls, TResult, TParameters>(parameters);
         }
+
+        public string[] UserInfo
+        {
+            get
+            {
+                return User.FindFirstValue("UserInfo").Split('|');
+            }
+        }
+
     }
 }

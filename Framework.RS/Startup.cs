@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Framework.Data;
+using Framework.Factory;
 using Framework.Factory.Client;
+using Framework.Factory.Common;
 using Framework.Factory.Factory;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -50,6 +52,7 @@ namespace Framework.RS
             services.AddScoped<ICommandHandler, CommandHandler>();
             services.AddScoped<QueryFactory, ConcreteQueryFactory>();
             services.AddScoped<IQueryExecutor, QueryExecutor>();
+            services.AddScoped<ILoggedInUser, LoggedInUser>();
             services.AddMvc();
         }
 

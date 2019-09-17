@@ -7,10 +7,13 @@ namespace Framework.Factory.Client
     {
         readonly QueryFactory _factory = null;
         readonly FrameworkDataContext _dataContext = null;
-        public QueryExecutor(QueryFactory factory, FrameworkDataContext dataContext)
+        private readonly ILoggedInUser _loggedInUser = null;
+
+        public QueryExecutor(QueryFactory factory, FrameworkDataContext dataContext, ILoggedInUser loggedInUser)
         {
             _factory = factory;
             _dataContext = dataContext;
+            _loggedInUser = loggedInUser;
         }
 
         public TResult Execute<TCls, TResult, TParameters>(TParameters parameters)
@@ -18,7 +21,7 @@ namespace Framework.Factory.Client
             where TResult : class
             where TParameters : class
         {
-            var _handler = _factory.CreateFactory<TResult, TParameters, TCls>(_dataContext);
+            var _handler = _factory.CreateFactory<TResult, TParameters, TCls>(_dataContext, _loggedInUser);
             return _handler.Execute(parameters);
         }
     }

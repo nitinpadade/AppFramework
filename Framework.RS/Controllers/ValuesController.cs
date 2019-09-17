@@ -6,18 +6,19 @@ using Framework.Factory.Client;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace Framework.RS.Controllers
 {
     [Route("api/[controller]")]
-    
+
     public class ValuesController : BaseController
     {
 
         public ValuesController(ICommandHandler command, IQueryExecutor query)
-            : base(command,query)
+            : base(command, query)
         {
-
+            
         }
 
         // GET api/values
@@ -25,7 +26,7 @@ namespace Framework.RS.Controllers
         [Authorize]
         public IActionResult Get()
         {
-            var result = Query<UserListQuery, QueryResultList<UserListModel>, UserListParameter>(new UserListParameter());
+            var result = Query<UserListQuery, QueryResultList<UserListModel>, UserListParameter>(new UserListParameter { Id = 0, UserInfo = UserInfo });
             return Ok(result);
         }
 

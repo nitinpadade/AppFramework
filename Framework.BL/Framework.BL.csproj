@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Folder Include="Command\" />
+    <Folder Include="Common\" />
   </ItemGroup>
 
   <ItemGroup>

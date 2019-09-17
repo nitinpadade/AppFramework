@@ -7,18 +7,21 @@ using System.Linq;
 
 namespace Framework.BL.Query.UserList
 {
-    public class UserListQuery : IQuery<QueryResultList<UserListModel>, UserListParameter>
-    {
-        private readonly FrameworkDataContext _dbcontext;
-        public UserListQuery(FrameworkDataContext dbcontext)
+    public class UserListQuery : CurrentUserContext, IQuery<QueryResultList<UserListModel>, UserListParameter>
+    {       
+
+        public UserListQuery(FrameworkDataContext dbcontext, ILoggedInUser loggedInUser)
+            : base(loggedInUser, dbcontext)
         {
-            _dbcontext = dbcontext;
+            
         }
 
         public QueryResultList<UserListModel> Execute(UserListParameter parameters)
         {
             try
             {
+                var userLoggedIn = UserInfo(parameters.UserInfo).Name;                
+
                 var result = _dbcontext.User.Select(n => new UserListModel
                 {
                     Id = n.Id,

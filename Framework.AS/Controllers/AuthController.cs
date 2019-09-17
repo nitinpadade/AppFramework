@@ -57,7 +57,7 @@ namespace Framework.AS.Controllers
                     claims: new List<Claim>
                     {
                          new Claim(ClaimTypes.Name, result.Name),
-                         new Claim("UserInfo", result.Id.ToString() + '|' + result.Name + '|' + result.RoleId.ToString())
+                         new Claim("UserInfo", result.Id.ToString() + '|' + result.Name + '|' + result.RoleId.ToString()+ '|' + result.Role.ToString())
                     },
                     expires: DateTime.Now.AddMinutes(30),
                     signingCredentials: signinCredentials
