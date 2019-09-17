@@ -1,0 +1,16 @@
+D:\VS.2017\AppFramework\AppFramework\Framework.BL\bin\Debug\netcoreapp2.1\Framework.BL.deps.json
+D:\VS.2017\AppFramework\AppFramework\Framework.BL\bin\Debug\netcoreapp2.1\Framework.BL.dll
+D:\VS.2017\AppFramework\AppFramework\Framework.BL\bin\Debug\netcoreapp2.1\Framework.BL.pdb
+D:\VS.2017\AppFramework\AppFramework\Framework.BL\obj\Debug\netcoreapp2.1\Framework.BL.csprojAssemblyReference.cache
+D:\VS.2017\AppFramework\AppFramework\Framework.BL\obj\Debug\netcoreapp2.1\Framework.BL.csproj.CoreCompileInputs.cache
+D:\VS.2017\AppFramework\AppFramework\Framework.BL\obj\Debug\netcoreapp2.1\Framework.BL.AssemblyInfoInputs.cache
+D:\VS.2017\AppFramework\AppFramework\Framework.BL\obj\Debug\netcoreapp2.1\Framework.BL.AssemblyInfo.cs
+D:\VS.2017\AppFramework\AppFramework\Framework.BL\obj\Debug\netcoreapp2.1\Framework.BL.dll
+D:\VS.2017\AppFramework\AppFramework\Framework.BL\obj\Debug\netcoreapp2.1\Framework.BL.pdb
+D:\VS.2017\AppFramework\AppFramework\Framework.BL\bin\Debug\netcoreapp2.1\Framework.Data.dll
+D:\VS.2017\AppFramework\AppFramework\Framework.BL\bin\Debug\netcoreapp2.1\Framework.DomainModels.dll
+D:\VS.2017\AppFramework\AppFramework\Framework.BL\bin\Debug\netcoreapp2.1\Framework.Factory.dll
+D:\VS.2017\AppFramework\AppFramework\Framework.BL\bin\Debug\netcoreapp2.1\Framework.Data.pdb
+D:\VS.2017\AppFramework\AppFramework\Framework.BL\bin\Debug\netcoreapp2.1\Framework.DomainModels.pdb
+D:\VS.2017\AppFramework\AppFramework\Framework.BL\bin\Debug\netcoreapp2.1\Framework.Factory.pdb
+D:\VS.2017\AppFramework\AppFramework\Framework.BL\obj\Debug\netcoreapp2.1\Framework.BL.csproj.CopyComplete

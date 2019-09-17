@@ -1,0 +1,12 @@
+D:\VS.2017\AppFramework\AppFramework\Framework.Factory\bin\Debug\netcoreapp2.1\Framework.Factory.deps.json
+D:\VS.2017\AppFramework\AppFramework\Framework.Factory\bin\Debug\netcoreapp2.1\Framework.Factory.dll
+D:\VS.2017\AppFramework\AppFramework\Framework.Factory\bin\Debug\netcoreapp2.1\Framework.Factory.pdb
+D:\VS.2017\AppFramework\AppFramework\Framework.Factory\obj\Debug\netcoreapp2.1\Framework.Factory.csproj.CoreCompileInputs.cache
+D:\VS.2017\AppFramework\AppFramework\Framework.Factory\obj\Debug\netcoreapp2.1\Framework.Factory.AssemblyInfoInputs.cache
+D:\VS.2017\AppFramework\AppFramework\Framework.Factory\obj\Debug\netcoreapp2.1\Framework.Factory.AssemblyInfo.cs
+D:\VS.2017\AppFramework\AppFramework\Framework.Factory\obj\Debug\netcoreapp2.1\Framework.Factory.dll
+D:\VS.2017\AppFramework\AppFramework\Framework.Factory\obj\Debug\netcoreapp2.1\Framework.Factory.pdb
+D:\VS.2017\AppFramework\AppFramework\Framework.Factory\obj\Debug\netcoreapp2.1\Framework.Factory.csprojAssemblyReference.cache
+D:\VS.2017\AppFramework\AppFramework\Framework.Factory\bin\Debug\netcoreapp2.1\Framework.Data.dll
+D:\VS.2017\AppFramework\AppFramework\Framework.Factory\bin\Debug\netcoreapp2.1\Framework.Data.pdb
+D:\VS.2017\AppFramework\AppFramework\Framework.Factory\obj\Debug\netcoreapp2.1\Framework.Factory.csproj.CopyComplete

@@ -13,9 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Framework.BL", "Framework.B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Framework.Data", "Framework.Data\Framework.Data.csproj", "{B5D3341F-0539-4950-8489-3BF588F01C0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.UI", "Framework.UI\Framework.UI.csproj", "{24CBC574-E8C3-40AD-AA6C-D792E1EEF595}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.AS", "Framework.AS\Framework.AS.csproj", "{CF1E258E-5F5D-49CE-9920-7C79F7F7E709}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Framework.AS", "Framework.AS\Framework.AS.csproj", "{CF1E258E-5F5D-49CE-9920-7C79F7F7E709}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,10 +41,6 @@ Global
 		{B5D3341F-0539-4950-8489-3BF588F01C0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5D3341F-0539-4950-8489-3BF588F01C0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5D3341F-0539-4950-8489-3BF588F01C0F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{24CBC574-E8C3-40AD-AA6C-D792E1EEF595}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{24CBC574-E8C3-40AD-AA6C-D792E1EEF595}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{24CBC574-E8C3-40AD-AA6C-D792E1EEF595}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{24CBC574-E8C3-40AD-AA6C-D792E1EEF595}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CF1E258E-5F5D-49CE-9920-7C79F7F7E709}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CF1E258E-5F5D-49CE-9920-7C79F7F7E709}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF1E258E-5F5D-49CE-9920-7C79F7F7E709}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -1,0 +1,9 @@
+D:\VS.2017\AppFramework\AppFramework\Framework.DomainModels\bin\Debug\netcoreapp2.1\Framework.DomainModels.deps.json
+D:\VS.2017\AppFramework\AppFramework\Framework.DomainModels\bin\Debug\netcoreapp2.1\Framework.DomainModels.dll
+D:\VS.2017\AppFramework\AppFramework\Framework.DomainModels\bin\Debug\netcoreapp2.1\Framework.DomainModels.pdb
+D:\VS.2017\AppFramework\AppFramework\Framework.DomainModels\obj\Debug\netcoreapp2.1\Framework.DomainModels.csproj.CoreCompileInputs.cache
+D:\VS.2017\AppFramework\AppFramework\Framework.DomainModels\obj\Debug\netcoreapp2.1\Framework.DomainModels.AssemblyInfoInputs.cache
+D:\VS.2017\AppFramework\AppFramework\Framework.DomainModels\obj\Debug\netcoreapp2.1\Framework.DomainModels.AssemblyInfo.cs
+D:\VS.2017\AppFramework\AppFramework\Framework.DomainModels\obj\Debug\netcoreapp2.1\Framework.DomainModels.dll
+D:\VS.2017\AppFramework\AppFramework\Framework.DomainModels\obj\Debug\netcoreapp2.1\Framework.DomainModels.pdb
+D:\VS.2017\AppFramework\AppFramework\Framework.DomainModels\obj\Debug\netcoreapp2.1\Framework.DomainModels.csprojAssemblyReference.cache
