@@ -1,5 +1,7 @@
-﻿using Framework.Factory.Client;
+﻿using Framework.BL.Common;
+using Framework.Factory.Client;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Security.Claims;
 
 namespace Framework.RS.Controllers
@@ -18,6 +20,7 @@ namespace Framework.RS.Controllers
             where TCls : class
             where TObj : class
         {
+            SetLoginUserContext();
             return _command.Dispatch<TCls, TObj>(cmdObj);
         }
 
@@ -26,16 +29,20 @@ namespace Framework.RS.Controllers
             where TResult : class
             where TParameters : class
         {
+            SetLoginUserContext();
             return _query.Execute<TCls, TResult, TParameters>(parameters);
-        }
+        }       
 
-        public string[] UserInfo
+        void SetLoginUserContext()
         {
-            get
+            var result = User.FindFirstValue("UserInfo").Split('|');
+            if (result != null)
             {
-                return User.FindFirstValue("UserInfo").Split('|');
+                LoginUserContext.UserId = Convert.ToInt32(result[0].ToString());
+                LoginUserContext.UserName = result[1].ToString();
+                LoginUserContext.RoleId = Convert.ToInt32(result[2].ToString());
+                LoginUserContext.RoleName = result[3].ToString();
             }
         }
-
     }
 }

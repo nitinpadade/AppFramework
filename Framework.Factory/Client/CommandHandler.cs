@@ -7,14 +7,11 @@ namespace Framework.Factory.Client
     {
         readonly CommandFactory _factory = null;
         readonly FrameworkDataContext _dataContext = null;
-        private readonly ILoggedInUser _loggedInUser = null;
 
-        public CommandHandler(CommandFactory factory, FrameworkDataContext dataContext, 
-            ILoggedInUser loggedInUser)
+        public CommandHandler(CommandFactory factory, FrameworkDataContext dataContext)
         {
             _factory = factory;
             _dataContext = dataContext;
-            _loggedInUser = loggedInUser;
         }
 
         public TObj Dispatch<TCls, TObj>(TObj cmdObj)

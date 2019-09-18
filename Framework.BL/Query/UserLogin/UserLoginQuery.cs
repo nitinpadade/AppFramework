@@ -10,12 +10,10 @@ namespace Framework.BL.Query.UserLogin
     public class UserLoginQuery : IQuery<QueryResult<UserLoginModel>, UserLoginParameter>
     {
         private readonly FrameworkDataContext _dbcontext;
-        private readonly ILoggedInUser _loggedInUser;
 
-        public UserLoginQuery(FrameworkDataContext dbcontext, ILoggedInUser loggedInUser)
+        public UserLoginQuery(FrameworkDataContext dbcontext)
         {
             _dbcontext = dbcontext;
-            _loggedInUser = loggedInUser;
         }
 
         public QueryResult<UserLoginModel> Execute(UserLoginParameter parameters)

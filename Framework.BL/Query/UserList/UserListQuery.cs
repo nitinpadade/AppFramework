@@ -1,4 +1,5 @@
-﻿using Framework.Data;
+﻿using Framework.BL.Common;
+using Framework.Data;
 using Framework.DomainModels.Models.UserList;
 using Framework.DomainModels.Parameters.UserList;
 using Framework.Factory;
@@ -7,20 +8,21 @@ using System.Linq;
 
 namespace Framework.BL.Query.UserList
 {
-    public class UserListQuery : CurrentUserContext, IQuery<QueryResultList<UserListModel>, UserListParameter>
-    {       
+    public class UserListQuery : IQuery<QueryResultList<UserListModel>, UserListParameter>
+    {
+        FrameworkDataContext _dbcontext { get; }
 
-        public UserListQuery(FrameworkDataContext dbcontext, ILoggedInUser loggedInUser)
-            : base(loggedInUser, dbcontext)
+        public UserListQuery(FrameworkDataContext dbcontext)
         {
-            
+            _dbcontext = dbcontext;
         }
 
         public QueryResultList<UserListModel> Execute(UserListParameter parameters)
         {
             try
             {
-                var userLoggedIn = UserInfo(parameters.UserInfo).Name;                
+                var userName = LoginUserContext.UserName;
+                var userId = LoginUserContext.UserId;
 
                 var result = _dbcontext.User.Select(n => new UserListModel
                 {

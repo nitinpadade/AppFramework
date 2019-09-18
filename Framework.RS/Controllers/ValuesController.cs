@@ -18,7 +18,7 @@ namespace Framework.RS.Controllers
         public ValuesController(ICommandHandler command, IQueryExecutor query)
             : base(command, query)
         {
-            
+
         }
 
         // GET api/values
@@ -26,7 +26,7 @@ namespace Framework.RS.Controllers
         [Authorize]
         public IActionResult Get()
         {
-            var result = Query<UserListQuery, QueryResultList<UserListModel>, UserListParameter>(new UserListParameter { Id = 0, UserInfo = UserInfo });
+            var result = Query<UserListQuery, QueryResultList<UserListModel>, UserListParameter>(new UserListParameter());
             return Ok(result);
         }
 

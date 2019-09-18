@@ -6,4 +6,3 @@ D:\VS.2017\AppFramework\AppFramework\Framework.DomainModels\obj\Debug\netcoreapp
 D:\VS.2017\AppFramework\AppFramework\Framework.DomainModels\obj\Debug\netcoreapp2.1\Framework.DomainModels.AssemblyInfo.cs
 D:\VS.2017\AppFramework\AppFramework\Framework.DomainModels\obj\Debug\netcoreapp2.1\Framework.DomainModels.dll
 D:\VS.2017\AppFramework\AppFramework\Framework.DomainModels\obj\Debug\netcoreapp2.1\Framework.DomainModels.pdb
-D:\VS.2017\AppFramework\AppFramework\Framework.DomainModels\obj\Debug\netcoreapp2.1\Framework.DomainModels.csprojAssemblyReference.cache
