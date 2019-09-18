@@ -3,10 +3,8 @@ using Framework.DomainModels.Models.UserList;
 using Framework.DomainModels.Parameters.UserList;
 using Framework.Factory;
 using Framework.Factory.Client;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Security.Claims;
 
 namespace Framework.RS.Controllers
 {
@@ -22,19 +20,19 @@ namespace Framework.RS.Controllers
         }
 
         // GET api/values
-        [HttpGet]
-        [Authorize]
+        [HttpGet]        
         public IActionResult Get()
         {
-            var result = Query<UserListQuery, QueryResultList<UserListModel>, UserListParameter>(new UserListParameter());
-            return Ok(result);
+            return Ok("Resource Server");
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        [Authorize]
+        public IActionResult Get(int id)
         {
-            return "value";
+            var result = Query<UserListQuery, QueryResultList<UserListModel>, UserListParameter>(new UserListParameter { Id = id });
+            return Ok(result);
         }
 
         // POST api/values

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Framework.DomainModels.Parameters.UserList
 {
-    public class UserListParameter : LoggedInUser
+    public class UserListParameter
     {
         public int Id { get; set; }
 
